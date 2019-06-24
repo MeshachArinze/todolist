@@ -1,4 +1,4 @@
-const CACHE_NAME = "ereyomi-v2";
+const CACHE_NAME = "ereyomi-v1";
 const myURL = ["/", "index.html", "ereyomi.css", "ereyomi.js"];
 
 self.addEventListener("install", event => {
