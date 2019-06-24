@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Todo List" />
+    <meta name="apple-mobile-web-app-title" content="Todo List" />
+    <meta name="theme-color" content="tomato" />
+    <meta name="msapplication-navbutton-color" content="tomato" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-starturl" content="/index.html" />
+    <meta name="" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="icon" sizes="128x128" href="/images/icons/icon-128x128.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes=""
+      href="/images/icons/icon-128x128.png"
+    />
+    <link rel="icon" sizes="192x192" href="/images/icons/icon-192x192.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="256x256"
+      href="/images/icons/icon-256x256.png"
+    />
+    <link rel="icon" sizes="256x256" href="/images/icons/icon-256x256.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/images/icons/" />
+    <link rel="icon" sizes="384x384" href="/images/icons/icon-384x384.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="384x384"
+      href="/images/icons/icon-384x384.png"
+    />
+    <link rel="icon" sizes="512x512" href="/images/iconsicon-512x512.png/" />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="/images/icons/icon-512x512.png"
+    />
+    <title>todo list</title>
+    <link rel="stylesheet" href="ereyomi.css" />
+  </head>
+  <body>
+    <div id="ereBody">
+      <header>
+        <p>Todo List</p>
+        <code>by: Ereyomi Oluwaeyi Samuel</code>
+      </header>
+      <section class="mainBody">
+        <section class="AddSection">
+          <div class="myinput">
+            <input type="time" placeholder="Enter Time" class="time" />
+            <input
+              type="text"
+              placeholder="Enter Task"
+              class="task"
+              maxlength="12"
+            />
+            <button class="addBtn">Add</button>
+          </div>
+        </section>
+        <section class="mylist">
+          <div class="myTable">
+            <div class="listRow">
+              <div class="title">Time</div>
+              <div class="title">| Task</div>
+            </div>
+            <div class="listRow">
+              <div class="todo">
+                <span class="myspan"> 8:30AM | Play Pes</span>
+              </div>
+              <div class="close">&times;</div>
+            </div>
+            <div class="listRow">
+              <div class="todo">
+                <span class="myspan checked"> 10:30AM | Cook rice</span>
+              </div>
+              <div class="close">&times;</div>
+            </div>
+            <div class="listRow">
+              <div class="todo">
+                <span class="myspan"> 11:45PM | Sleep</span>
+              </div>
+              <div class="close">&times;</div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+    <section id="installBanner" class="banner">
+      <button id="installBtn">Install</button>
+    </section>
+    <!--modal box for box -->
+    <div id="modal-box" class="modal-box">
+      <div class="modal-inner">
+        <p id="display" class="display"></p>
+        <button id="refreshBtn">refresh</button>
+        <button id="dismissBtn">dismiss</button>
+      </div>
+    </div>
+    <!--end of modal box -->
+    <script src="ereyomi.js"></script>
+  </body>
+</html>
